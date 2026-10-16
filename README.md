@@ -29,6 +29,7 @@ This library is meant to have the following:
 
 | Family | Styles | For | Licence |
 |---|---|---|---|
+| Droid Sans Fallback | Regular | Korean (all modern Hangul syllables), Simplified/Traditional Chinese and CJK document fallback | Apache-2.0 |
 | BIZ UDPGothic | Regular, Bold | Japanese UI text (sans) | OFL-1.1 |
 | Shippori Mincho | Regular | Japanese document text (serif) | OFL-1.1 |
 | BIZ UDMincho | Regular | Japanese document text (serif) | OFL-1.1 |

@@ -2,6 +2,7 @@
 #   family | style | file (relative to the repo root) | scripts (ISO 15924, comma-separated) | licence | licence file | sha256 | source
 # Lines starting with '#' and blank lines are ignored. Apps read this file from their build.rs when
 # CRAFT_FONTS_DIR is set (see docs/integration.md), so keep the format this simple.
+Droid Sans Fallback | Regular | fonts/droid-sans-fallback/DroidSansFallback.ttf | Kore,Hans,Hant,Latn | Apache-2.0 | fonts/droid-sans-fallback/NOTICE | 05d71b179ef97b82cf1bb91cef290c600a510f77f39b4964359e3ef88378c79d | https://android.googlesource.com/platform/frameworks/base/+/1aed5ea2dcf7cb0bf35635f378b2326461ba0df0/data/fonts/DroidSansFallback.ttf
 Shippori Mincho | Regular | fonts/shippori-mincho/ShipporiMincho-Regular.ttf | Jpan,Latn | OFL-1.1 | fonts/shippori-mincho/OFL.txt | 769b5269f0f9bc6534b352c0e6bd856a566e03ff788f107191c2d835863570b2 | https://github.com/google/fonts/tree/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/shipporimincho
 BIZ UDPGothic | Regular | fonts/biz-ud-pgothic/BIZUDPGothic-Regular.ttf | Jpan,Latn | OFL-1.1 | fonts/biz-ud-pgothic/OFL.txt | 258d7156c165f2ff774b6efee637c22c3b950de0d8a10e501137061bc8085d01 | https://github.com/googlefonts/morisawa-biz-ud-gothic/tree/18934af56b9c003ca58c54bffbf226848cb11032
 BIZ UDPGothic | Bold | fonts/biz-ud-pgothic/BIZUDPGothic-Bold.ttf | Jpan,Latn | OFL-1.1 | fonts/biz-ud-pgothic/OFL.txt | 30eba52fc837e8b62c97d4b82e6706583149fb7294e3712dd71a655eaea80a90 | https://github.com/googlefonts/morisawa-biz-ud-gothic/tree/18934af56b9c003ca58c54bffbf226848cb11032
