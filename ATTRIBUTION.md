@@ -6,6 +6,7 @@ upstream sources (checked by `craft-fonts-tests`, which verifies each SHA-256 in
 
 | File | Family / style | Author | Source (pinned) | Licence |
 |---|---|---|---|---|
+| `fonts/droid-sans-fallback/DroidSansFallback.ttf` | Droid Sans Fallback Regular | Google Corporation; Ascender Corporation | [Android Open Source Project@1aed5ea](https://android.googlesource.com/platform/frameworks/base/+/1aed5ea2dcf7cb0bf35635f378b2326461ba0df0/data/fonts/) (Android 4.4_r1; original, unmodified) | Apache-2.0 (`fonts/droid-sans-fallback/NOTICE`; directory licensing in `README.txt`) |
 | `fonts/shippori-mincho/ShipporiMincho-Regular.ttf` | Shippori Mincho Regular | The Shippori Mincho Project Authors (FONTDASU) | [google/fonts@9710da1](https://github.com/google/fonts/tree/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/shipporimincho) | OFL-1.1 (`fonts/shippori-mincho/OFL.txt`) |
 | `fonts/biz-ud-pgothic/BIZUDPGothic-Regular.ttf` | BIZ UDPGothic Regular | The BIZ UDGothic Project Authors (Morisawa Inc.) | [googlefonts/morisawa-biz-ud-gothic@18934af](https://github.com/googlefonts/morisawa-biz-ud-gothic/tree/18934af56b9c003ca58c54bffbf226848cb11032) | OFL-1.1 (`fonts/biz-ud-pgothic/OFL.txt`) |
 | `fonts/biz-ud-pgothic/BIZUDPGothic-Bold.ttf` | BIZ UDPGothic Bold | The BIZ UDGothic Project Authors (Morisawa Inc.) | [googlefonts/morisawa-biz-ud-gothic@18934af](https://github.com/googlefonts/morisawa-biz-ud-gothic/tree/18934af56b9c003ca58c54bffbf226848cb11032) | OFL-1.1 (`fonts/biz-ud-pgothic/OFL.txt`) |

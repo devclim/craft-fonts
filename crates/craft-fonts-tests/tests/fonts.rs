@@ -5,6 +5,38 @@ use sha2::{Digest, Sha256};
 use skrifa::raw::TableProvider;
 use skrifa::{FontRef, MetadataProvider, string::StringId};
 
+#[test]
+fn droid_cjk_is_original_apache_and_covers_modern_hangul_and_chinese() {
+    let entry = FONTS
+        .iter()
+        .find(|f| f.family == "Droid Sans Fallback")
+        .expect("CJK build input");
+    assert_eq!(entry.licence, "Apache-2.0");
+    let data = bytes(entry);
+    let font = FontRef::new(&data).unwrap();
+    let map = font.charmap();
+    for code in 0xac00..=0xd7a3 {
+        assert!(
+            map.map(char::from_u32(code).unwrap()).is_some(),
+            "missing U+{code:04X}"
+        );
+    }
+    for ch in "欢迎 中文 汉字 漢字 计划 變更 한글 계획 ㄱㄴㅏㅓ こんにちは".chars()
+    {
+        assert!(map.map(ch).is_some(), "missing {ch}");
+    }
+    let attribution: String = [StringId::COPYRIGHT_NOTICE, StringId::MANUFACTURER]
+        .into_iter()
+        .flat_map(|id| font.localized_strings(id))
+        .map(|s| s.to_string())
+        .collect();
+    assert!(attribution.contains("Google") && attribution.contains("Ascender"));
+    assert!(!attribution.to_ascii_lowercase().contains("adobe"));
+    let notice =
+        std::fs::read_to_string(craft_fonts_tests::repo_root().join(entry.licence_file)).unwrap();
+    assert!(notice.contains("Apache License") && notice.contains("Version 2.0"));
+}
+
 fn bytes(f: &Font) -> Vec<u8> {
     std::fs::read(craft_fonts_tests::repo_root().join(f.file))
         .unwrap_or_else(|e| panic!("{}: {e}", f.file))
